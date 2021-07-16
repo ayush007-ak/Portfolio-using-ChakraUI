@@ -13,12 +13,18 @@ function App() {
   return (
    <VStack p={5}>
      <Flex w="100%">
-       <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">Ayush khaskalam</Heading>
+       <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">IamAk</Heading>
    
       <Spacer></Spacer>
-     <IconButton icon={<FaLinkedin/>}></IconButton>
-     <IconButton ml={2} icon={<FaGithub/>}></IconButton>
-     <IconButton ml={2} icon={<FaInstagram/>}></IconButton>
+     <IconButton icon={<FaLinkedin/>} onClick={()=>{
+       window.open("https://www.linkedin.com/in/ayush-khaskalam-2198391a9")
+     }}></IconButton>
+     <IconButton ml={2} icon={<FaGithub/>} onClick={()=>{
+       window.open("https://github.com/ayush007-ak")
+     }}></IconButton>
+     <IconButton ml={2} icon={<FaInstagram/>} onClick={()=>{
+       window.open("https://www.instagram.com/ayush_khaskalam98/")
+     }}></IconButton>
      <IconButton ml={8} icon={isDark ? <FaSun/>: <FaMoon/>} isRound="true" onClick={toggleColorMode}></IconButton>
      </Flex>
      <Header/>
